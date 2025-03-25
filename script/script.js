@@ -1,4 +1,4 @@
-//Credit to https://matildasutho.github.io/InteractiveMedia2024/Week3/script/script.js for showing me how to do this typing affect
+//Credit to https://matildasutho.github.io/InteractiveMedia2024/Week3/script/script.js for showing me how to do this typing effect
 var data = [
   {
     html: `
@@ -45,7 +45,7 @@ for (var j = 0; j < allElements.length; j++) {
     text;
   (function type() {
     text = devTypeText.slice(0, ++i);
-    element.innerHTML = text + `<span class='typing-caret'>❤</span>`;
+    element.innerHTML = text + `<span class='typing-caret'>|</span>`;
     var char = text.slice(-1);
     if (char === "<") isTag = true;
     if (char === ">") isTag = false;
